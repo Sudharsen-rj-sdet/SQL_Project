@@ -64,7 +64,7 @@ select product_id, unit_price from Products;
 
 -- query 2 
 
-select p.product_name, p.category,s.sale_date,s.total_price as revenue_generated 
+select p.product_name, p.category,s.total_price as revenue_generated 
 from products p inner join sales s 
 where p.product_id = s.product_id and s.sale_date LIKE '2024%';
 
